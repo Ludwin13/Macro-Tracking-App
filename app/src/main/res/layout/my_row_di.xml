@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="4dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainLayout_DI"
+    android:background="?attr/selectableItemBackground">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:id="@+id/intakeIDText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.48" />
+
+            <TextView
+                android:id="@+id/foodID_DIText"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="165"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/intakeIDText"
+                app:layout_constraintTop_toTopOf="@+id/intakeIDText" />
+
+            <TextView
+                android:id="@+id/remarksText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remarks"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/RemarksViewText"
+                app:layout_constraintTop_toTopOf="@+id/intakeTypeText" />
+
+            <TextView
+                android:id="@+id/intakeDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="2022-21-07"
+                android:textSize="15sp"
+
+                app:layout_constraintStart_toEndOf="@+id/foodID_DIText"
+                app:layout_constraintTop_toTopOf="@+id/foodID_DIText" />
+
+            <TextView
+                android:id="@+id/multiplierText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="5"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/multiplierTxt"
+                app:layout_constraintTop_toTopOf="@+id/intakeDateText" />
+
+            <TextView
+                android:id="@+id/intakeTypeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Protein"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/intakeTypeTxt"
+                app:layout_constraintTop_toTopOf="@+id/multiplierText" />
+
+
+            <TextView
+                android:id="@+id/intakeDateTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/foodID_DIText"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/multiplierTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:text="Multiplier"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/intakeDateTxt"
+                app:layout_constraintTop_toTopOf="@+id/intakeDateTxt" />
+
+            <TextView
+                android:id="@+id/intakeTypeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Type"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/multiplierTxt"
+                app:layout_constraintTop_toTopOf="@+id/multiplierTxt" />
+
+
+            <TextView
+                android:id="@+id/RemarksViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:text="Remarks"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/intakeTypeTxt"
+                app:layout_constraintTop_toTopOf="@+id/intakeTypeTxt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

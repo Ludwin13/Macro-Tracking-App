@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fooddbv2" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodDbV2" >
+        <activity
+            android:name=".UpdateActivityDI"
+            android:parentActivityName=".DailyIntakeDisplay"
+            android:exported="false" />
+        <activity
+            android:name=".AddActivityDI"
+            android:exported="false"
+            android:label="Add Daily Intake"
+            android:parentActivityName=".DailyIntakeDisplay" />
+        <activity
+            android:name=".DailyIntakeDisplay"
+            android:parentActivityName=".MainActivity"
+            android:exported="false"
+            android:label="Daily Intake" />
+        <activity
+            android:name=".UpdateActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddActivity"
+            android:label="Add Food"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Food List" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

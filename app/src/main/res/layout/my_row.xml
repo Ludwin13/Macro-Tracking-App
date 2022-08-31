@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="4dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainLayout"
+    android:background="?attr/selectableItemBackground">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:id="@+id/foodNameText"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Food Name"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/remarksText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remarks"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/RemarksViewText"
+                app:layout_constraintTop_toTopOf="@+id/totalCalText" />
+
+            <TextView
+                android:id="@+id/carbsGramsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Carbs"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/CarbsTxt"
+                app:layout_constraintTop_toTopOf="@+id/foodNameText" />
+
+            <TextView
+                android:id="@+id/fatGramsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fat"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/FatTxt"
+                app:layout_constraintTop_toTopOf="@+id/carbsGramsText" />
+
+            <TextView
+                android:id="@+id/proteinGramsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Protein"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/ProteinTxt"
+                app:layout_constraintTop_toTopOf="@+id/fatGramsText" />
+
+            <TextView
+                android:id="@+id/totalCalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/TotalText"
+                app:layout_constraintTop_toTopOf="@+id/proteinGramsText" />
+
+            <TextView
+                android:id="@+id/CarbsTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:text="Carbs(g)"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/foodNameText"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/FatTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Fat(g)"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/CarbsTxt"
+                app:layout_constraintTop_toTopOf="@+id/CarbsTxt" />
+
+            <TextView
+                android:id="@+id/ProteinTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Protein(g)"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/FatTxt"
+                app:layout_constraintTop_toTopOf="@+id/FatTxt" />
+
+            <TextView
+                android:id="@+id/TotalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Total Cal"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/ProteinTxt"
+                app:layout_constraintTop_toTopOf="@+id/ProteinTxt" />
+
+            <TextView
+                android:id="@+id/RemarksViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Remarks"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/TotalText"
+                app:layout_constraintTop_toTopOf="@+id/TotalText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
